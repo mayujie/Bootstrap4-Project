@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+        <!-- Required meta tags always come first, the unicode we goona use -->
+        <meta charset="utf-8">
+        <!-- responsive web design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS classes, include that into the head of index.html -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -95,7 +103,13 @@
            </div>
         </div>
     </footer>
-
+    <!-- Include the JS classes provided by Bootstrap. jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- Since the bootstrap is dependent upon both jQuery and Popper in that order -->
+    <!-- css at top, JS at bottom. you want to css class to be loaded immediately so that as the page starts rendering, when the JavaScript is fetched, the JavaScript needs to execute in order to make changes to your page with the JavaScript code, and that will take a little bit of time. -->
+    <!-- So you don't want the user to be waiting for the entire page to be loaded before they see something in their browser window. So that's why we normally load the JavaScript classes towards the end of our html page just before the body tech. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
